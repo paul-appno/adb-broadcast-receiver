@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	         id="adb-broadcast-receiver"
+	    version="1.0.0">
+
+	<name>ADB Broadcast Receiver</name>
+	<description>Adobe Mobile App Acquisition</description>
+
+  <dependency id="adobe-mobile-services"
+             url="https://github.com/Adobe-Marketing-Cloud/mobile-services.git"
+             version=">=4.13.1" />
+
+	<platform name="android">
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <receiver android:name="com.adobe.ADBBroadcastReceiver" android:exported="true">
+        <intent-filter>
+          <action android:name="com.android.vending.INSTALL_REFERRER" />
+        </intent-filter>
+      </receiver>
+    </config-file>
+    <source-file src="src/android/ADBBroadcastReceiver.java" target-dir="src/com/adobe/" />
+    <framework src="com.android.support:support-v4:+" />
+  </platform>
+
+</plugin>

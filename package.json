@@ -1,0 +1,25 @@
+{
+  "name": "adb-broadcast-receiver",
+  "version": "1.0.0",
+  "description": "Adobe Mobile App Acquisition",
+  "cordova": {
+    "id": "adb-broadcast-receiver",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-appno/adb-broadcast-receiver.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul-appno/adb-broadcast-receiver/issues"
+  },
+  "homepage": "https://github.com/paul-appno/adb-broadcast-receiver#readme"
+}
